@@ -17,7 +17,7 @@ clean:
 	-rm ./dict.cdb ./dict.txt
 
 dict:
-	python ./convdict.py index.special $(WORDNETDICT)
+	python2 ./convdict.py index.special $(WORDNETDICT)
 
 localdict: dict.cdb dict.txt
 	-mkdir LOCAL
