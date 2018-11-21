@@ -4,7 +4,7 @@
 #
 
 # must be specified by a user
-WORDNETDICT=../WordNet-3.0
+WORDNETDICT=../WordNet-3.0/dict
 
 VERSION=0.91
 PACKAGE=queequeg-$(VERSION)

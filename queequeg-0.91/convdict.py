@@ -112,7 +112,7 @@ class DictionaryConverter:
   def __init__(self, verbose=1):
     self.dict = {}
     self.special = {}
-    self.wordnet_dir = "../WordNet-3.0"
+    self.wordnet_dir = None
     self.verbose = verbose
     return
 
@@ -223,6 +223,8 @@ class DictionaryConverter:
     return
 
   def read(self, special_file, wordnet_dir):
+    self.wordnet_dir = wordnet_dir
+
     for (s, pos) in self.read_special(special_file):
       if pos.startswith("!"):
         pos = pos[1:]
